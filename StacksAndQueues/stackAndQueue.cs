@@ -42,5 +42,24 @@ namespace StacksAndQueues
             }
             Console.WriteLine();
         }
+        internal void Pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine(" Deletion is not possible");
+                return;
+            }
+            Console.WriteLine("{0} is deleted from stack", top.data);
+            top = top.next;
+        }
+        internal void Peek()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("stack is empty");
+                return;
+            }
+            Console.WriteLine("{0} is on the top of the stack", top.data);
+        }
     }
 }
