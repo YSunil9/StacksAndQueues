@@ -5,22 +5,18 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Stacks and Queues Problem\n");
-            stackAndQueue stack = new stackAndQueue();
-            stack.Push(70);
-            stack.Push(30);
-            stack.Push(56);
-            Console.WriteLine("\nThe Elements Are Present In The Stack");
-            stack.Display();
-            stack.Peek();
-            stack.Pop();
-            stack.Display();
-            stack.Peek();
-            stack.Pop();
-            stack.Display();
-            stack.Peek();
-            stack.Pop();
+            //stackAndQueue stack = new stackAndQueue();
+            Queue qu = new Queue();
+            qu.Enqueue(56);
+            qu.Enqueue(30);
+            qu.Enqueue(70);
             Console.WriteLine();
-            stack.Display();
+            qu.Dequeue();
+            qu.Display();
+            qu.Dequeue();
+            qu.Display();
+            qu.Dequeue();
+            qu.Display();
         }
     }
 }
